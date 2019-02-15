@@ -1,0 +1,21 @@
+-<project default="compile">
+
+	-<target name="compile">
+
+		<javac  srcdir="." includeantruntime="false"/>
+
+	</target>	
+
+	-<target name="run" depends="compile">
+
+		-<java fork="true" classname="WebServer">
+		
+       <java classname = "WebServer" fork="true" >
+
+		<arg value="true"/>	
+
+		</java>
+
+	</target>
+
+</project>
